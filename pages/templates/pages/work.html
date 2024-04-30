@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <title>About Page</title>
+    <title>Work Page</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
     <h1>Works</h1>
@@ -12,5 +14,7 @@
         <li>Mavo: This is a programming language Verou developed that extends the syntax of HTML for the purpose of making it easier to develop web applications.</li>
         <li>PrismJS: This is a syntax highlighter she made that is used for highlighting in HTML.</li>
     </ul>
+
+    <p><a href="{% url 'home' %}">Back to Home</a></p>
 </body>
 </html>

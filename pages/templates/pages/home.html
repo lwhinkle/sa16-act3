@@ -1,13 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
     <h1>Lea Verou</h1>
 
     <p>Hello, this page serves to be a portfolio for Lea Verou. She is a web developer who specializes in designing web technologies, with the goal of making web programming easier.</p>
+
+    <h3>Links</h3>
+    <ul>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'work' %}">Work</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
 </body>
 </html>
